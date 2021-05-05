@@ -1,0 +1,421 @@
+Tu NSS es: 48139498470
+
+paypal
+lostengoperdidos1
+
+luissoyyo1234
+lostengoperdidos2
+
+cuenta de prueba
+soyluis1234565@hotmail.com
+lostengoperdidos23
+abram mendez montes
+
+mexico 19 enero 1996
+
+
+softwaredespejatumente@hotmail.com
+Iniciandoasi3
+mexico 
+1 enero 1994
+Inicialasi4
+
+CompraVentaFcc
+proyecto1245t
+
+
+
+cisco Como1234
+
+POINTYNEWYEAR50
+KINGY25
+POINTSPRIZES25
+MIGHTYSALEH25
+RANKER25
+QUANTECH3000
+REDDITSUB345
+TWEETR562
+GOOGCOM294
+FACEPAGE1920
+FACEGROUP900
+BEERMONEY3573
+NEWYEARMONEY25
+NEW93
+WORTHY477
+ABSTRACT675
+REDDITSUB0100
+TWEETR775
+HOTSHOT320
+FEARLESS50
+GOOGCOM294
+
+
+94YPH-NB67C-DMCCC-M39CD-MDT73
+
+http://files.pythonhosted.org/packages/84/44/32c311a6fb23b8b5cc4f535af1ad65fc3e07
+
+
+PARA QUITARESPACIOS SE DEBE DE COPIAR Y REMPLAZAR ESTO NOS BA A AYUDAR EN LA CUESTION DEL ALINEADO DEL DOCUMENTO
+TAMBIEN SE DEBE DE DEJAR LA IMAGEN DE LA PAORTADA HASTA ARRIBA, TENIENDO EN CUENTA LA REGLA TODO DEBE DE SEGUIR UNAMISMA MEDIDA  DE LA REGLA, SI NO SE HACE POR ESO TODO SALE MOVIDO EN EL MOMENTO DE GENERAR EL XML, CONSIDERAR TAMBIEN LAS NOTAS AL PIE DE PAGINA PARA PODER CORREGIR  
+
+PARA REMPLAZARSE UTILIZA SE SELECCIONA TODO EL DOCUMENTO Y SE PRESIONA ESPACIO TABULADOR Y ESPACIO , SE HACE EL REMPLAZAR Y YA SE BORRAN TODOS LOS ESPACIOS
+
+CUANDO SE GUARDA SIEMPRE SE DEBE DE HACER LO MISMO DE PONER GUARADAR COMO PAGINA WEB FILTRADDA EN UTF-8 COMO CODIFICACION Y TODO YA QUEDA GURADADO
+
+EN EL MOMENTO DE QUE TODO TE QUEDE ALINEADOA LA IZQUIERDA SE DEBE DE BUSCAREN FUENTE OPCIONES AVANZADAS
+ESCALA 100%
+ESPACIADO NORMAL 100%
+NORMAL EN LO ULTIMO
+
+OTRANOTA IMPORTANTE ES QUE A LA HORA DEMODIFICAR EN CODIGO SE DEBE DECERRAR ELWORD PERO AL ABRIRLO DE NUEVO SE DEBE DE GUARDAR DE NUEVO COMO PAGINA WEB FILTRADA PARA PODER VER DE NUEVO LO QUE SE ESTA HACIENDO 
+
+si a la hora de hacer las modificaciones no se ven los cambios entonces se recarga el programa porque puede tener fallos
+
+tambien cuando no se reconocen los titulos se debe de tener en cuenta la idea de poner las etiqueta ####OTROS#### DESPUES antes de indice un ejemplo de esto es ver estos codigos
+
+<span style='font-size:12.0pt;font-family:"Arial",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoBodyText align=center style='margin-left:0cm;text-align:center'> </p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;color:black'>####OTROS####</span></p>
+
+<p class=MsoBodyText style='margin-top:.15pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman",serif'> </span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman",serif'>          ÍNDICE</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>       </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>            </span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman",serif'>INTRODUCCIÓN                                                                                                     
+                </span></b><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>4</span></p>
+
+y asi el problemase puede solucionar
+
+
+crear cotas el usuario da datos y el servidor crea las cotas
+
+
+C1E0A100E9
+
+
+dela rosa
+54768642
+
+
+[Comandos: 1.- netsh wlan show drivers 2.- netsh wlan set hostednetwork mode=allow ssid=NombreDeLaRed key=12345678 3.- netsh wlan start hostednetwork 4.- netsh wlan stop hostednetwork [COMANDO PARA DETENER LA RED]
+
+
+ver datos netsh wlan show hostednetwork
+
+
+Usuario
+luis-mora
+correo
+dark_100@live.com
+contraceña
+personal1
+
+
+informacion de contacto 
+luis mora
+
+
+
+	investigacion parse en pdf con php 
+
+	pdf Parser 
+	https://www.pdfparser.org/
+
+	codigo de solo conversion n de texto 
+	https://gist.github.com/neko-fire/7038322
+
+	procesador compatible Core i5 2430M PPGA988
+	https://articulo.mercadolibre.com.mx/MLM-649699728-procesador-core-i5-2430m-_JM
+
+	punto de venta en linea
+
+	pagina para aprender a meter imagenes en una base de datos con mysql
+	https://es.stackoverflow.com/questions/21316/c%C3%B3mo-guardar-imagen-en-mysql
+
+	https://www.baulphp.com/cargar-y-almacenar-imagen-en-mysql-php/
+
+	necesita ser:
+	 llamativo 
+	 fluido 
+	 facil de usar
+	 Lo basico , registrar, eliminar, actualizar, consultar, enviar alertas, creacion de varios usuarios, ventas
+	 comunicacion con varios usuarios del sistema a la vez
+
+	 puntos en el diseño que no pueden faltar
+
+	 buscador
+	 ser respondivo
+	 chat en vivo, chatbots
+	 preguntas frecuentes
+	 certidficados de seguridad
+
+	 herraminetas seo (para posicionarnos en los buscadores)
+
+
+1.1 a 1.4 del temario
+
+bernardoparra@hotmail.com
+
+
+cuando ya se esta dentro de la rasberry
+
+sudo mount -proc
+
+<activity androip:name=".DisplayMessageActivity"
+	androip:parentActivityName=".MainActivity">
+
+	<!-- The meta-data tag is requered if you support API level 15 and lower-->
+	<meta-data
+		androip:name="androip.support.PARENT_ACTIVITY"
+		androip:value=".MainActivity"/>
+		</activity>
+
+
+		FOLIO 048818T dos titulos no quisieron aparecer revisar de nuevo
+
+
+		Folio 760017T lista
+
+		Folio 763217T
+
+		los nombres de las figuras estan abajo pasarlas arriba
+		-agregar viñeta antes de la figura 2.1
+		-corregir tabla 2.1 esta saltada
+		-falta agregar titulo 2.6.1 
+		-
+		
+
+luis
+personal
+dark_100@live.com
+		
+select *
+from empleados;
+
+
+SELECT clave,nombre,apellido
+FROM empleados
+WHERE puesto='&v_puesto';
+
+/*sustituyendo una columna con una variable*/
+SELECT clave,&v_columna
+FROM empleados;
+
+/*Sustituyendo una tabla con una variable*/
+SELECT clave,nombre
+FROM &v_tabla;
+
+/*sustituyen una clausla*/
+SELECT clave,nombre
+FROM empleados
+&v_clausula;
+
+
+DEFINE variable=20
+DEFINE variable
+define
+accept variable3;
+
+/*accep recibe un valor y lo guarda en una variable, como en programación tambien tienen sus atributos*/
+ACCEPT v_clave PROMPT 'Dame la clave del empleado:'
+ACCEPT v_sueldo NUMBER PROMPT 'Sueldo:'
+ACCEPT v_pwd PROMPT 'Password:' HIDE
+DEFINE;
+
+ACCEPT v_empl PROMPT 'Dame la clave del empleado:'
+SELECT d.clave,d.nombre
+FROM empleados e, deptos d
+WHERE e.dep_clave = d.clave
+AND   e.clave = &v_empl;
+
+define v_empl;
+/* llamamos a un script externo y le pasamos parametros*/
+START primerScript 1 5;
+start segundoScripsql;
+
+/*Creamos una tabla por medio de una subconsulta*/
+CREATE TABLE Emp_41 AS
+    SELECT clave,nombre,apellido,sueldo
+    FROM empleados
+    WHERE dep_clave = 41;
+
+SELECT *
+FROM emp_41;
+
+    /*Creacion de tabla profesor*/
+    CREATE TABLE profesor
+    (clave Number(5) constraint cla_pk PRIMARY KEY,
+    Nombre VARCHAR2(15) constraint nom_nn NOT NULL,
+    Apellido VARCHAR2(15) constraint ape_nn NOT NULL,
+    Titulo VARCHAR2(20) NULL,
+    Contrato VARCHAR2(10) constraint con_ck CHECK(Contrato in('Completo','Medio','Hora')) NOT NULL 
+    );
+    
+    desc PROFESOR;
+    
+    drop table profesor;
+    
+    /*Creacion de tabla Materia, con llave primari y foranea*/
+    CREATE TABLE materia
+    (Clave NUMBER(4) constraint clav_pk PRIMARY KEY,
+    Grupo VARCHAR2(5) constraint gru_nn NOT NULL,
+    Nombre VARCHAR2(25) constraint nomb_nn NOT NULL,
+    Prof_clave NUMBER(5) constraint prof_nn NOT NULL,
+    Salon VARCHAR2(5) constraint sal_nn NOT NULL
+    );
+    
+    ALTER TABLE materia
+    ADD constraint mate_prof_fk FOREIGN KEY (Prof_clave)
+    REFERENCES profesor(clave);
+    
+    /*CONSULTA DE TODOS LO OBJETOS DEL USUARIO*/
+    SELECT OBJECT_NAME
+    from USER_OBJECTS;
+    
+    /*cONSULTA DEL DICCIONARIO*/
+    SELECT *
+    FROM dictionary;
+    WHERE table_name LIKE '&v_nombre%';
+    
+    /*describe la tabla*/
+    DESCRIBE user_cons_columns;
+    
+    /*Se realiza una selección*/
+    SELECT object_name
+    FROM user_objects;
+    WHERE object_type='TABLE';
+    
+    /*desplegamos las constraints existentes en la base*/
+    SELECT *
+    FROM user_constraints;
+    
+    SELECT constraint_name,constraint_type,
+           search_condition,r_constraint_name
+    FROM user_constraints
+    WHERE table_name = 'empleados';
+    
+    /*desplegar columnas asociadas con los user_cons_columns*/
+    SELECT constraint_name, column_name
+    FROM user_cons_columns
+    WHERE table_name = 'profesor';
+    
+    /*Para concer los comentarios de las columnas se puede usar este comando*/
+    SELECT column_name, comments
+    FROM all_col_comments
+    WHERE table_name = 'user_objects';
+    
+    
+    /*Muestre las columnas que forman la llave primaria de alguna tabla dada en una variable de
+    substitución. También muestre el nombre del constraint asociado.*/
+    SELECT constraint_name, column_name
+    FROM user_cons_columns
+    WHERE table_name = '&v_tabla';
+
+    describe deptos;
+    /*Agregamos una nueva columna a deptos*/
+    INSERT INTO deptos(clave,nombre,est_clave)
+    VALUES (51,'dESARROLLO',1);
+    
+    /*insertar renglones con el metodo implicito*/
+    INSERT INTO deptos(clave,nombre)
+    VALUES (52,'Desarrollo');
+    
+    /*insertar renglones con el metodo explicito , se le dice a la tabla que un valor sera vacio*/
+    INSERT INTO deptos
+    VALUES(53,'Desarrollo',NULL);
+    
+    /*INSERTANDO FILAS OCN SUBCONSULTAS, suponiendo que creamos la tabla ordenes1998, y que se necesitan estos datos especificos de otra tabla*/
+    INSERT INTO ORDENES1998(clave,fechaorden,importe,cli_clave)
+    SELECT clave,fechaorden,importe,cli_clave
+    FROM ordenes
+    WHERE fechaembar IS NOT NULL
+    AND   to_char(fechaorden,'YYYY')='1998';
+    
+    /*Modificando el nombre de una columna*/
+    UPDATE deptos
+    SET nombre = 'Desarrollo'
+    WHERE nombre = 'dESARROLLO';
+    
+    /*Eliminación de renglones*/
+    DELETE FROM deptos
+    WHERE nombre = 'Desarrollo';
+    
+    /*Llene las tablas profesor y materia con los siguientes datos:*/
+    INSERT INTO profesor
+    VALUES(1,'Jesús','Lavallle','Maestro','Completo');
+    INSERT INTO profesor
+    VALUES(2,'Mauricio','Corona','Doctor','Completo');
+    INSERT INTO profesor
+    VALUES(3,'Héctor','Jiménez','Licenciad0','Completo');
+    INSERT INTO profesor
+    VALUES(4,'Andrés','vázquez',NULL,'Hora');
+    INSERT INTO profesor
+    VALUES(5,'Beatriz','Bernabé','Licenciada','Medio');
+    
+    select * from profesor;
+    DELETE FROM profesor;
+    
+    /*inserta datos en la tabla materia*/
+    INSERT INTO materia
+    VALUES(100,'G-1','Sistemas Operativos',1,'2-1');
+    INSERT INTO materia
+    VALUES(101,'G-2','Sistemas Operativos',2,'7-2');
+    INSERT INTO materia
+    VALUES(102,'G-1','Lenguajes y Autómatas',1,'6-1');
+    INSERT INTO materia
+    VALUES(103,'G-1','Anáñisis Numérico',3,'2-2');
+
+    select * from materia;
+    
+    /*Modifique el titulo de Héctor Jiménez a Maestro.*/
+    UPDATE profesor
+    SET titulo = 'Maestro'
+    WHERE titulo = 'Licenciad0';
+    
+    /*Salve los cambios.*/
+    commit;
+    
+    /*Elimine los datos de la tabla Materia.*/
+    DELETE FROM materia;
+    
+    select * from materia;
+    
+    /*Recupere los registros.*/
+    ROLLBACK;
+    
+    /*Salve los cambios.*/
+    COMMIT;
+    
+    /*Despliegue el título, nombre y apellido de los profesores, la materia y grupo asignados. La lista debe
+    incluir aún aquellos profesores que no tienen materias asignadas. La salida debe ser:*/    
+    SELECT p.titulo ||' ' ||p.nombre||' '||p.apellido Profesor, m.nombre Materia, m.grupo Grupo
+    FROM profesor p, materia m
+    WHERE p.clave = m.prof_clave(+);
+    
+    select * from ordenes;
+
+
+    revisar que porque no se ejecutan los scripts con
+    start
+
+    porque al hacer rollback , no se regrasan los cambios
+    en una recreacion de la llave foranea
+
+    como salir de un procedimiento almacenado
+
+    COMO EJECUTAR UNA FUNCION EN ORACLE
+
+    
