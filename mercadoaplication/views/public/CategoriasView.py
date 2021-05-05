@@ -21,4 +21,4 @@ from django.http.response import HttpResponse,JsonResponse,HttpResponseRedirect
 from django.contrib import messages
 
 def vw_categorias(request):
-	return render(request,'public/Categorias.html')
+	return render(request, 'public/Categorias.html')

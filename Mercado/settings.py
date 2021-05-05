@@ -132,3 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # terminar sesión al cerrar el navegador
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
