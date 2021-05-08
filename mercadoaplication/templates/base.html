@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
+  
   {% block title %}<title>Mercado defensores</title>{% endblock %}
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  
 
       <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -21,18 +21,38 @@
 </head>
 
 <body>
+ <header id="header" class="">
+   <nav class="blue" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo left">Logo</a>
+    
+      <ul class="right show-on-med-and-down login" >
+        <li><a class="login" href="#">Ingresar</a></li>
+        <li><a class="login" href="#">Registro</a></li>
+      </ul> 
+    </div>  
+  </nav>
+ </header><!-- /header -->
 
-<nav class="blue" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo left">Logo</a>
-    
-    <ul class="right show-on-med-and-down login" >
-      <li><a class="login" href="#">Ingresar</a></li>
-      <li><a class="login" href="#">Registro</a></li>
-    </ul>
-    
-  </div>  
-</nav>
+
+
+<ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="{% static 'image/defensores.jpg' %}">
+      </div>
+      <a href="#user"><img class="circle" src="{% static 'image/defensores.jpg' %}"></a>
+      <a href="#name"><span class="white-text name">Mercado</span></a>
+      <a href="#email"><span class="white-text email">Facebook</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="{% url 'url_categorias' %}">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+
 
   <div class="container-fluid">
 
@@ -52,5 +72,31 @@
     </div>
 
   </div>
+
+  <footer class="page-footer blue lighten-2">
+    <div class="footer-copyright">
+        <div class="container">
+            Desarrollo
+            <a class="grey-text text-lighten-4 right" href="https://funnyfrontend.com/">Web</a>
+        </div>
+    </div>
+  </footer>
 </body>
 </html>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
