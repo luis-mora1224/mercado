@@ -14,7 +14,7 @@
 from django.db import models
 
 class Categorias(models.Model):
-    cateclave = models.SmallIntegerField(primary_key=True)
+    cateclave = models.IntegerField(primary_key=True)
     catedescripcion = models.CharField(max_length=40)
     catetipo = models.CharField(max_length=1, blank=True, null=True)
 
