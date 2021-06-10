@@ -11,8 +11,8 @@
                 ||              ||  
 """
 
-from Mercado.mercadoaplication.models.public.categorias import Categorias
-from Mercado.mercadoaplication.models.public.local import Local
+from .Categorias import Categorias
+from .local import Local
 
 from django.db import models
 

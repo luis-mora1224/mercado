@@ -12,7 +12,7 @@
 """
 
 from django.db import models
-from Mercado.mercadoaplication.models.public.orden import Orden
+from .orden import Orden
 
 
 class Cliente(models.Model):

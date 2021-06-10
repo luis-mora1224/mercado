@@ -12,7 +12,7 @@
 """
 
 from django.db import models
-from Mercado.mercadoaplication.models.public.locatario import Locatario
+from .locatario import Locatario
 
 class Local(models.Model):
 	"""docstring para modelo local"""

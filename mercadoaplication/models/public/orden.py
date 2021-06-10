@@ -12,7 +12,7 @@
 """
 
 from django.db import models
-from Mercado.mercadoaplication.models.public.producto import Producto
+from .producto import Producto
 
 class Orden(models.Model):
 	"""docstring for model Orden"""

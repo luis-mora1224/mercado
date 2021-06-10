@@ -12,8 +12,8 @@
 """
 
 from django.db import models
-from Mercado.mercadoaplication.models.public.orden import Orden
-from Mercado.mercadoaplication.models.public.local import Local
+from .orden import Orden
+from .local import Local
 
 
 class Pago(models.Model):
