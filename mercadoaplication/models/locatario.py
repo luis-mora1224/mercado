@@ -18,7 +18,7 @@ class Locatario(models.Model):
 	IdUsuario = models.IntegerField(primary_key=True)
 	Nombre = models.CharField(max_length=30)
 	Contraceña = models.CharField(max_length=30)
-	FechaAlta = models.DateField()
+	FechaAlta = models.DateField(auto_now_add=True, auto_now=False)
 	FechaBaja = models.DateField(blank=True)
 	Status = models.IntegerField(help_text="Puede tomar el valor de Activo = 1 o Inactivo = 0")
 

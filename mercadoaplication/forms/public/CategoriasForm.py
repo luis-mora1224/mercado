@@ -1,7 +1,7 @@
 """
     AUTHOR:         luis mora
     CREATION DATE:  28/01/2021
-    DESCRIPTION:    Form de la tabla Categorias del esquema CONTABILIDAD
+    DESCRIPTION:    Form de la tabla Categorias del esquema public
 
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -14,7 +14,7 @@
 from django import forms
 
 #importar modelos
-from mercadoaplication.models.public.Categorias import Categorias
+from mercadoaplication.models.Categorias import Categorias
 
 class CategoriasForm(forms.ModelForm):
 	"""docstring for CategoriasForm"""

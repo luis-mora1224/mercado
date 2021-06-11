@@ -1,7 +1,7 @@
 """
     AUTHOR:         luis mora
-    CREATION DATE:  01/05/2021
-    DESCRIPTION:    Vista de la tabla Categorias del esquema public
+    CREATION DATE:  11/06/2021
+    DESCRIPTION:    Vista pagina de inicio
 
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -10,15 +10,10 @@
                 ||              ||  
                 ||              ||  
 """
-#importar modelos
-from mercadoaplication.models.Categorias import Categorias
-
-#importar el formulario
-from mercadoaplication.forms.public.CategoriasForm import CategoriasForm
 
 from django.shortcuts import render, redirect,get_object_or_404
 from django.http.response import HttpResponse,JsonResponse,HttpResponseRedirect
 from django.contrib import messages
 
-def vw_categorias(request):
+def vw_Inicio(request):
 	return render(request, 'public/Inicio.html')
