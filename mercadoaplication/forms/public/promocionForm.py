@@ -1,7 +1,7 @@
 """
     AUTHOR:         luis mora
-    CREATION DATE:  11/06/2021
-    DESCRIPTION:    Form de la tabla producto del esquema public
+    CREATION DATE:  21/06/2021
+    DESCRIPTION:    Form de la tabla promocion del esquema public
 
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -11,23 +11,24 @@
                 ||              ||  
 """
 #importar modelos
-from mercadoaplication.models.producto import Producto
+from mercadoaplication.models.promocion import Promocion
 
 from django import forms
 
-class ProductoForm(forms.ModelForm):
+class PromocionForm(forms.ModelForm):
 	class Meta:
-		model = Producto
+		models = Promocion
 
-		fields = ('nombre', 'precioventa', 'existencia')
+		fields = ('nombre', 'numeroproductos', 'preciopromocion')
+
 		widgets = {
-
-				  'nombre': forms.TextInput(attrs=   {'id':'nombre',
+				'nombre': forms.TextInput(attrs=   {'id':'nombre',
 				  	                                'maxlength':'30',
 					                                'required':'true',
 					                                'class':'input-field',
 					                                'oninput':'toUpperCase(this)'}),
-				  'precioventa': forms.FloatField(attrs=   {'id':'comisionporcentaje',
-				   	                                                'step': '0.01'}),
-				  'existencia': forms.NumberInput(attrs=   {'id':'existencia',})
+				'numeroproductos': forms.NumberInput(attrs=   {'id':'comisionporcentaje'}),
+				'preciopromocion': forms.FloatField(attrs=   {'id':'existencia',
+														  'step': '0.01'})
+
 		}

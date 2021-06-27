@@ -14,9 +14,10 @@
 from django.db import models
 
 class Categorias(models.Model):
-    cateclave = models.IntegerField(primary_key=True)
-    catedescripcion = models.CharField(max_length=40)
-    catetipo = models.CharField(max_length=1, blank=True, null=True)
+    idcategoria = models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=40)
+    catedescripcion = models.CharField(max_length=60, blank=True, null=True)
+    catetipo = models.CharField(max_length=1)
 
     class Meta:
         managed = False

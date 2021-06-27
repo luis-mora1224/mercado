@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('',include('mercadoaplication.urls')),
-    #path('admin/', admin.site.urls),
-    #path('mercadoaplication/', include('mercadoaplication.urls')),
+    path('admin/', admin.site.urls),
+    path('mercadoaplication/', include('mercadoaplication.urls')),
     #path('', RedirectView.as_view(url='/mercadoaplication/', permanent=True)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

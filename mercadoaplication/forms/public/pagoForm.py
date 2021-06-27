@@ -19,15 +19,12 @@ class PagoForm(forms.ModelForm):
 	class Meta:
 		model = Pago
 
-		fields = ('ComisionPorcentaje', 'ComisionPesos', 'orden',
-			      'local')
+		fields = ('comisionporcentaje', 'comisionpesos')
 
 		widgets = {
 
 				   'ComisionPorcentaje': forms.FloatField(attrs=   {'id':'ComisionPorcentaje',
 				   	                                                'step': '0.01'}),
 				   'ComisionPesos': forms.FloatField(attrs=   {'id':'ComisionPorcentaje',
-				   	                                                'step': '0.01'}),
-				   'orden': forms.NumberInput(attrs=   {'id':'orden',}),
-				   'local': forms.NumberInput(attrs=   {'id':'local',})
+				   	                                                'step': '0.01'})
 		}

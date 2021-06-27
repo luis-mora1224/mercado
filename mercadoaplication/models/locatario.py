@@ -14,17 +14,16 @@
 from django.db import models
 
 class Locatario(models.Model):
-	"""docstring para modelo local"""
-	IdUsuario = models.IntegerField(primary_key=True)
-	Nombre = models.CharField(max_length=30)
-	Contraceña = models.CharField(max_length=30)
-	FechaAlta = models.DateField(auto_now_add=True, auto_now=False)
-	FechaBaja = models.DateField(blank=True)
-	Status = models.IntegerField(help_text="Puede tomar el valor de Activo = 1 o Inactivo = 0")
+    idusuario = models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=40)
+    contraceña = models.CharField(max_length=40)
+    fechaalta = models.DateField(blank=True, null=True)
+    fechabaja = models.DateField(blank=True, null=True)
+    status = models.IntegerField(blank=True, null=True)
 
-	class Meta:
-		managed = False
-		db_table = 'locatario'
+    class Meta:
+        managed = False
+        db_table = 'locatario'
 
-	def __str__(self):
-		return (self.Nombre,)
+    def __str__(self):
+    	return (self.nombre,)

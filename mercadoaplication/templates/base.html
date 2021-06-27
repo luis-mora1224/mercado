@@ -6,14 +6,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 
       <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
 
   <!-- Add additional CSS in static file -->
   {% load static %}
@@ -24,7 +24,7 @@
  <header id="header" class="">
    <nav class="blue" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo left">Logo</a>
+      <a id="logo-container" href="{% url 'url_inicio' %}" class="brand-logo left">Logo</a>
     
       <ul class="right show-on-med-and-down login" >
         <li><a class="login" href="#">Ingresar</a></li>
@@ -34,7 +34,7 @@
   </nav>
  </header><!-- /header -->
 
-
+ <!--<MARQUEE> <h3>Mercado defensores de la repubica  promociones del dia</h3> </MARQUEE>-->
 
 <ul id="slide-out" class="sidenav">
     <li><div class="user-view">
@@ -46,7 +46,7 @@
       <a href="#email"><span class="white-text email">Facebook</span></a>
     </div></li>
     <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="{% url 'url_categorias' %}">Second Link</a></li>
+    <li><a href="{% url 'url_categoria' %}">Categorias</a></li>
     <li><div class="divider"></div></li>
     <li><a class="subheader">Subheader</a></li>
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
@@ -58,7 +58,7 @@
       <div class="col s12 m2">
       {% block sidebar %}
       <ul class="sidebar-nav">
-          <li><a class="waves-effect waves-light btn" href="{% url 'url_categorias' %}">Home</a></li>
+          <li><a class="waves-effect waves-light btn" href="{% url 'url_inicio' %}">Home</a></li>
           <li><a class="waves-effect waves-light btn" href="">Categorias</a></li>
           <li><a class="waves-effect waves-light btn" href="">Negocios</a></li>
       </ul>
@@ -79,13 +79,18 @@
         </div>
     </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
 
 <script>
    document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
+    //var instances = M.Sidenav.init(elems, options);
   });
 
   // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
@@ -96,5 +101,6 @@
 
   $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('select').formSelect();
   });
 </script>

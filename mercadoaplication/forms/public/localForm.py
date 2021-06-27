@@ -20,21 +20,18 @@ class LocalForm(forms.ModelForm):
 	class Meta:
 		model = Local
 
-		fields = ('Nombre', 'Pasillo', 'Zona',
-			      'locatarios')
+		fields = ('nombre', 'pasillo', 'zona')
 
 		widgets = {
 
-				'Nombre': forms.TextInput(attrs=   {'id':'Nombre',
+				'nombre': forms.TextInput(attrs=   {'id':'nombre',
 					                                'maxlength':'30',
 					                                'required':'true',
 					                                'class':'input-field',
 					                                'oninput':'toUpperCase(this)'}),
-				'Pasillo': forms.NumberInput(attrs=   {'id':'Pasillo',
+				'pasillo': forms.NumberInput(attrs=   {'id':'pasillo',
 					                                'required':'true',}),
-				'Zona': forms.TextInput(attrs=   {'id':'Zona',
+				'zona': forms.TextInput(attrs=   {'id':'zona',
 					                                'maxlength':'30',
-					                                'class':'input_field'}),
-				'locatarios': forms.NumberInput(attrs=   {'id':'locatarios',
 					                                'class':'input_field'}),
 		}

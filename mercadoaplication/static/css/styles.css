@@ -10,6 +10,7 @@
                 ||              ||  
                 ||              ||  
 ¨*/
+
 .sidebar-nav {
     margin-top: 20px;
     padding: 0;
@@ -68,4 +69,39 @@ footer.page-footer {
 
 .login{
   color: #F5F9F8;
+}
+
+form{
+  width:300px;
+  padding:16px;
+  border-radius:10px;
+  margin:auto;
+  background-color:#D4F4F5;
+}
+
+form label{
+  width:72px;
+  font-weight:bold;
+  display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+  width:180px;
+  padding:3px 10px;
+  border:1px solid #FFFFFF;
+  border-radius:3px;
+  background-color:#FFFFFF;
+  margin:8px 0;
+  display:inline-block;
+}
+
+.personal{
+  width:180px;
+  padding:3px 10px;
+  border:1px solid #FFFFFF;
+  border-radius:3px;
+  background-color:#FFFFFF;
+  margin:8px 0;
+  display:inline-block;
 }

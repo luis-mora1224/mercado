@@ -13,20 +13,23 @@
 
 from django.db import models
 from .producto import Producto
+from .local import Local1
+from .cliente import Cliente
 
 class Orden(models.Model):
-	"""docstring for model Orden"""
-	IdOrden = models.IntegerField(primary_key=True)
-	CantidadProductos = models.IntegerField()
-	PrecioTotal = models.FloatField()
-	estado = models.IntegerField(help_text="Existen tres números 1=Entregado, 2=pendiente (a recoger o entregar) 3=recolectando")
-	servicio = models.CharField(max_length=15, help_text="Domicilio o recoleccion")
-	producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
+    idorden = models.AutoField(primary_key=True)
+    cantidadproductos = models.IntegerField(blank=True, null=True)
+    preciototal = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
+    estado = models.IntegerField(blank=True, null=True)
+    servicio = models.CharField(max_length=35)
+    idproducto = models.ForeignKey('Producto', models.DO_NOTHING, db_column='idproducto', blank=True, null=True)
+    idlocal = models.ForeignKey(Local1, models.DO_NOTHING, db_column='idlocal', blank=True, null=True)
+    idcliente = models.ForeignKey(Cliente, models.DO_NOTHING, db_column='idcliente', blank=True, null=True)
 
-	class Meta:
-		managed = False
-		db_table = 'orden'
+    class Meta:
+        managed = False
+        db_table = 'orden'
 
-	def __str__(self):
-		return (self.estado,)
+    def __str__(self):
+    	return (self.servicio)
 		

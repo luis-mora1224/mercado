@@ -13,21 +13,19 @@
 
 from django.db import models
 from .orden import Orden
-from .local import Local
+from .local import Local1
 
 
 class Pago(models.Model):
-	"""docstring for model Pago"""
-	IdPago = models.IntegerField(primary_key=True)
-	ComisionPorcentaje = models.FloatField()
-	ComisionPesos = models.FloatField(help_text="De acuerdo al porcetaje de comision, se agregan los pesos")
-	orden = models.ForeignKey(Orden, on_delete=models.CASCADE)
-	local = models.ForeignKey(Local, on_delete=models.CASCADE)
+    idpagos = models.AutoField(primary_key=True)
+    comisionporcentaje = models.DecimalField(max_digits=2, decimal_places=2, blank=True, null=True)
+    comisionpesos = models.DecimalField(max_digits=6, decimal_places=2, blank=True, null=True)
+    idorden = models.ForeignKey(Orden, models.DO_NOTHING, db_column='idorden', blank=True, null=True)
+    idlocal = models.ForeignKey(Local1, models.DO_NOTHING, db_column='idlocal', blank=True, null=True)
 
-	class Meta:
-		managed = False
-		db_table = 'pago'
+    class Meta:
+        managed = False
+        db_table = 'pago'
 
-	def __str__(self):
-		return (self.orden)
-		
+    def __str__(self):
+    	return (self.orden,)		

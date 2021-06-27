@@ -20,25 +20,25 @@ class locatarioForm(forms.ModelForm):
 	class Meta:
 		model = Locatario
 
-		fields = ('Nombre', 'Contraceña','FechaAlta', 
-			      'FechaBaja', 'Status')
+		fields = ('nombre', 'contraceña','fechaalta', 
+			      'fechabaja', 'status')
 
 		widgets = {
-				  'Nombre': forms.TextInput(attrs=   {'id':'Nombre',
+				  'nombre': forms.TextInput(attrs=   {'id':'nombre',
 				  									  'maxlength':'30',
 				  									  'required':'true',
 				  									  'class': 'input-field',
 				  									  'oninput':'toUpperCase(this)'}),
-				  'Contraceña': forms.TextInput(attrs=   {'id':'Contraceña',
+				  'contraceña': forms.TextInput(attrs=   {'id':'contraceña',
 				  	                                  'maxlength':'30',
 				  	                                  'required':'true',
 				  	                                  'class':'input-field'}),
 		
-				  'FechaAlta': forms.DateField(attrs= {'id':'FechaAlta'}),
+				  'fechaalta': forms.DateField(attrs= {'id':'fechaalta'}),
 
-				  'FechaAlta': forms.DateField(attrs=   {'id':'FechaBaja',}),
+				  'fechaalta': forms.DateField(attrs=   {'id':'fechabaja',}),
 
-				  'Status': forms.TextInput(attrs=   {'id':'Status', 
+				  'status': forms.TextInput(attrs=   {'id':'status', 
 				  	                                  'maxlength':'12',
 				  	                                  'required':'true',
 				  	                                  'class':'input-field'}),

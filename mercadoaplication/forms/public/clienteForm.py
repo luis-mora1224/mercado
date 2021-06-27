@@ -19,27 +19,22 @@ class ClienteForm(forms.ModelForm):
 	class Meta:
 		model = Cliente
 
-		fields = ('Nombre', 'Contraceña', 'Direccion',
-			      'FechaAlta', 'FechaBaja', 'Status')
+		fields = ('nombre', 'contraceña', 'direccion',
+			      'status')
 
 		widgets = {
-				  'Nombre': forms.TextInput(attrs=   {'id':'Nombre',
+				  'nombre': forms.TextInput(attrs=   {'id':'nombre',
 				  									  'maxlength':'30',
 				  									  'required':'true',
-				  									  'class': 'input-field',
-				  									  'oninput':'toUpperCase'}),
-				  'Contraceña': forms.TextInput(attrs=   {'id':'Contraceña',
+				  									  'class': 'input-field'}),
+				  'contraceña': forms.TextInput(attrs=   {'id':'contraceña',
 				  	                                  'maxlength':'30',
 				  	                                  'required':'true',
 				  	                                  'class':'input-field'}),
-				  'Direccion': forms.TextInput(attrs=   {'id':'Direccion',
+				  'direccion': forms.TextInput(attrs=   {'id':'direccion',
 				  	                                  'maxlength':'30',
 				  									  'required':'true',
 				  									  'class': 'input-field',}),
-				  'FechaAlta': forms.DateField(attrs= {'id':'FechaAlta'}),
-
-				  'FechaAlta': forms.DateField(attrs=   {'id':'FechaBaja',}),
-
 				  'Status': forms.TextInput(attrs=   {'id':'Status', 
 				  	                                  'maxlength':'12',
 				  	                                  'required':'true',

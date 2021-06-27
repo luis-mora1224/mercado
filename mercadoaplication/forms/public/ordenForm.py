@@ -19,12 +19,12 @@ class OrdenForm(models.Model):
 	"""docstring for ordenForm"""
 	model = Orden
 
-	fields =  ('CantidadProductos', 'PrecioTotal', 'estado',
+	fields =  ('cantidadproductos', 'preciototal', 'estado',
 		       'servicio', 'producto')
 	widgets = {
-			'CantidadProductos': forms.NumberInput(attrs=   {'id':'CantidadProductos',
+			'cantidadproductos': forms.NumberInput(attrs=   {'id':'cantidadproductos',
 				                                            'required':'true'}),
-			'PrecioTotal': forms.FloatField(attrs= {'id':'PrecioTotal',
+			'preciototal': forms.FloatField(attrs= {'id':'preciototal',
 				                                    'step': '0.01'}),
 			'estado': forms.NumberInput(attrs=   {'id':'estado',
 				                                    'required':'true'}),
@@ -32,6 +32,4 @@ class OrdenForm(models.Model):
 				                                    'maxlength':'30',
 					                                'required':'true',
 					                                'class':'input-field',}),
-			'producto': forms.NumberInput(attrs=   {'id':'producto',
-				                                    'required':'true'})
 	}
