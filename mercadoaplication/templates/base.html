@@ -70,7 +70,7 @@
     </div>
 
   </div>
-
+  {% block footer %}
   <footer class="page-footer blue lighten-2">
     <div class="footer-copyright">
         <div class="container">
@@ -79,6 +79,7 @@
         </div>
     </div>
   </footer>
+  {% endblock %}
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Compiled and minified JavaScript -->
@@ -91,6 +92,10 @@
    document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     //var instances = M.Sidenav.init(elems, options);
+
+    /*inicializacion de ventana modal
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, opacity(0.5));*/
   });
 
   // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
@@ -102,5 +107,6 @@
   $(document).ready(function(){
     $('.sidenav').sidenav();
     $('select').formSelect();
+    $('.modal').modal();
   });
 </script>

@@ -105,3 +105,13 @@ form input[type="email"]{
   margin:8px 0;
   display:inline-block;
 }
+
+table tr:hover {
+  background-color: #E4D9D9;
+  cursor: pointer;
+}
+
+.selected {
+    background-color: #D4F4F5;
+    color: #9B6E6E;
+}

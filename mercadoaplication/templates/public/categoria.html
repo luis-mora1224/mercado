@@ -3,177 +3,85 @@
 {% block content %}
 <h1>Mercado Defensores de la Republica</h1>
 
-  <div class="container white" id="cn_categoria">
-    <div class="col s8">
-      <div class="row">
-        <div class="col s2 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Articulos Para el Hogar</span>
-              <p>Articulos para decorar o uso diario en el hogar.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s2 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Golosinas</span>
-              <p>Dulces en general.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s2 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Comestibles</span>
-              <p>Todo tipo de alimentos.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s2 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Juguetes</span>
-              <p>Juguetes de todo tipo para niños.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s2 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Articulos de Belleza</span>
-              <p>Cosmeticos, accesorios, tintes, etc.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container white" id="categoria">
     
-    <!--Div del formulario-->
-    <div class="col s4 ">
-        <form method="POST" c id="form" onsubmit="local_categoria_insertar(event);" accept-charset="utf-8">
-        {% csrf_token %} 
-    
+      <!--<div class="col s12 m8">
         <div class="row">
-          <div class="input-field col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          
-          </div>  
-          <div class="input-field col s10">
-            <!--{{ form.idcategoria }}
-            <label for="first_name">Clave</label>-->
+          <div class="col s4 m4">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Articulos Para el Hogar</span>
+                <p>Articulos para decorar o uso diario en el hogar.</p>
+              </div>
+              <div class="card-action">
+                <center>
+                  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Ver</a>  
+                </center>              
+              </div>
+            </div>
           </div>
-          <div class="input-field col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          
-          </div> 
-        </div>
-
-      <div class="row">
-        <div class="input-field col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          
-        </div>
-        <div class="input-field col s10">
-          
-          {{ form.nombre }}
-          <label for="first_name">Nombre<i class="Small material-icons right">mode_edit</i></label>
-
-        </div>
-        <div class="input-field col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          
-        </div>
-      </div>
-
-        <div class="row">
-          <div class="input-field col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          
+          <div class="col s4 m4">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Golosinas</span>
+                  <p>Dulces en general.</p>
+              </div>
+              <div class="card-action">
+                <button class="waves-effect waves-light btn" type="button" onclick="retorna_Articulos_Hogar();">Articulos</button>
+                <a href="#">This is a link</a>
+              </div>
+            </div>
           </div>
-          <div class="input-field col s10">
-            
-            {{ form.catedescripcion }}
-            <label for="first_name">Descripción<i class="Small material-icons right">mode_edit</i> </label>
-
-          </div>
-          <div class="input-field col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          
-        </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          </div>
-          <div class="input-field col s10">
-          <!--{{ form.catetipo }}-->
-            <select id="catetipo" class="icons">
-              <option value="A" data-icon="{% static 'image/Casa.jpg' %}">Articulos para el hogar</option>
-              <option value="G" data-icon="{% static 'image/Dulces.jpg' %}">Golosinas</option>
-              <option value="C" data-icon="{% static 'image/Comestibles.jpg' %}" class="left"  >Comestibles</option>
-              <option value="J" data-icon="{% static 'image/Juguetes.jpg' %}">Juguetes</option>
-              <option value="B" data-icon="{% static 'image/Belleza.jpg' %}">Articulos de belleza</option>        
-            </select>
-
-            <label for="first_name">Tipo</label>
-          </div>
-          <div class="input-field col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          
+          <div class="col s4 m4">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Comestibles</span>
+                <p>Todo tipo de alimentos.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+            </div>
           </div>
         </div>
         
         <div class="row">
-          <div class="col s1">
-          <!--<input  id="first_name" type="text" class="validate">-->
-          
+          <div class="col s6 m6">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Juguetes</span>
+                <p>Juguetes de todo tipo para niños.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>  
+          <div class="col s6 m6">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Articulos de Belleza</span>
+                <p>Cosmeticos, accesorios, tintes, etc.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+            </div>
           </div>
-          <div class="col s11">
-            <center>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Guardar
-              <i class="material-icons right">send</i>
-            </button>
-            </center>
-          </div>
-        </div>
-    
-      </form>
-    </div>
-  	
-  </div>
-<!-- contenedor de las listas
-  <div class="container white">
-    <div class="row">
-      <div class="col s12">
-       <div class="bordeSeccion" style="height:188px;margin-top:25px;margin-bottom:5px;" id="con_cat_deselecciona">
+        </div>-->
+        <div class="col s12 m8">
+      <div class="row">
+      <div class="col s12 m12">
+           <div class="bordeSeccion" style="height:188px;margin-top:25px;margin-bottom:5px;" id="cat_deseleccionada">
       <div class="form-group col-md-12 formFila" style="margin-top:20px;margin-left:10px;">
         <div class="form-row col-md-11" style="margin-top:-15px;">
           <table id="con_cat_table" class="table table-responsive table-bordered table-sm table-hover">
             <thead>
               <tr>
-                <th>Id</th>
+                <th>Código</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Tipo</th>            
@@ -181,7 +89,120 @@
             </thead>
             <tbody id="con_cat_selecciona">
               {% for cat in categorias %}
-                <tr>
+                <tr data-value="{{ cat.catetipo }}" onclick="local_buscar({{ cat.idcategoria }});">
+                  <td>{{ cat.idcategoria }}</td>
+                  <td>{{ cat.nombre }}</td>
+                  <td>{{ cat.catedescripcion }}</td>
+                  <td>{{ cat.catetipo }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+      </div>
+    
+      </div>
+    </div>
+      
+      
+
+      <div class="col s12 m4">
+        <div class="row">
+          <!--Colocamos el formulario en una nueva fila y reglon-->
+          <div class="col s12 m12">
+            <form method="POST" id="form" onsubmit="local_categoria_insertar(event);" accept-charset="utf-8">
+            {% csrf_token %} 
+              <div class="row">
+                <div class="input-field col s12 m1">
+                <!--<input  id="first_name" type="text" class="validate">-->      
+                </div>
+                <div class="input-field col s12 m10">
+                  {{ form.nombre }}
+                  <label for="first_name" class="label">Nombre<i class="Small material-icons right">mode_edit</i></label>
+                </div>
+                <div class="input-field col s12 m1">
+                <!--<input  id="first_name" type="text" class="validate">-->
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12 m1">
+                <!--<input  id="first_name" type="text" class="validate">--> 
+                </div>
+                <div class="input-field col s12 m10"> 
+                  {{ form.catedescripcion }}
+                  <label for="first_name" id="label">Descripción<i class="Small material-icons right">mode_edit</i> </label>
+                </div>
+                <div class="input-field col s12 m1">
+                <!--<input  id="first_name" type="text" class="validate">--> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12 m1">
+                <!--<input  id="first_name" type="text" class="validate">-->
+                </div>
+                <div class="input-field col s12 m10">
+                <!--{{ form.catetipo }}-->
+                  <select id="catetipo" class="icons">
+                  <option value="A" data-icon="{% static 'image/Casa.jpg' %}">Articulos para el hogar</option>
+                  <option value="G" data-icon="{% static 'image/Dulces.jpg' %}">Golosinas</option>
+                  <option value="C" data-icon="{% static 'image/Comestibles.jpg' %}" class="left"  >Comestibles</option>
+                  <option value="J" data-icon="{% static 'image/Juguetes.jpg' %}">Juguetes</option>
+                  <option value="B" data-icon="{% static 'image/Belleza.jpg' %}">Articulos de belleza</option>        
+                  </select>
+
+                  <label for="first_name">Tipo</label>
+                </div>
+                <div class="input-field col s12 m1">
+                <!--<input  id="first_name" type="text" class="validate">--> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m1">
+                <!--<input  id="first_name" type="text" class="validate">-->
+                </div>
+                <div class="col s12 m10">
+                  <center>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Guardar
+                  <i class="material-icons right">send</i>
+                  </button>
+                  </center>
+                </div>
+                <div class="col s12 m1">
+                <!--<input  id="first_name" type="text" class="validate">-->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div><!--cierre del row principal-->
+  </div>
+
+
+
+<!-- contenedor de las listas-->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="col s12">
+       <div class="bordeSeccion" style="height:188px;margin-top:25px;margin-bottom:5px;" id="cat_deseleccionada">
+      <div class="form-group col-md-12 formFila" style="margin-top:20px;margin-left:10px;">
+        <div class="form-row col-md-11" style="margin-top:-15px;">
+          <table id="con_cat_table" class="table table-responsive table-bordered table-sm table-hover">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Tipo</th>            
+                <th>Acción</th> 
+              </tr>
+            </thead>
+            <tbody id="con_cat_selecciona">
+              {% for cat in categorias %}
+                <tr data-value="{{ cat.catetipo }}" onclick="local_buscar({{ cat.idcategoria }});">
                   <td>{{ cat.idcategoria }}</td>
                   <td>{{ cat.nombre }}</td>
                   <td>{{ cat.catedescripcion }}</td>
@@ -195,12 +216,23 @@
     </div>
       </div>
     </div>
-  </div>-->
+    <!--<div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>-->
+  </div>
 
+  {% block footer %}
+
+  {% endblock %}
 
 <script type="text/javascript">   
+  
+  /*se declara variable para algun pk seleccionado*/
+  var pk_edicion = null;
+  var btn_Editar = document.getElementById("btn_Editar");
+  var btn_Eliminar = document.getElementById("btn_Eliminar");
+  var lista = document.getElementById("con_cat_selecciona");
   //inciamos el select del form
-
 	function local_categoria_insertar(e){
 		e.preventDefault(); //evitamos que el formulario se envie 
 		//let serializeData = $("#cn_categoria").serialize();
@@ -226,6 +258,66 @@
 				}
 			});
 	}
+
+  function local_buscar(pk) {
+
+    {% for cat in categorias %}
+      pkcat =  {{ cat.idcategoria  }};
+      if( pkcat == pk  ){
+
+        nombre = "{{ cat.nombre }}";
+        descripcion = "{{ cat.catedescripcion }}";
+        tipo = "{{ cat.catetipo }}";
+        $("#btn_Editar").removeAttr("disabled");
+        //$("#btn_Editar").attr("disabled", "disabled");
+        document.querySelectorAll(".label").value = "";
+        var activo = document.activeElement.id;
+       activo.innerHTML = "";
+        document.getElementById('nombre').value = nombre;
+        document.getElementById('catedescripcion').value = descripcion;
+        document.getElementById('catetipo').value= tipo;
+        M.toast({html: 'Se puede editar', classes: 'rounded'});
+      }
+      
+    {% endfor %}
+    console.log(pk);
+    window.pk_edicion = pk;
+
+  }
+
+  function retorna_Articulos_Hogar()
+  {
+    // consulta hacia la base de datos sobre articulos del hogar
+      $.ajax({
+        url: '{%url 'url_Articulos_hogar' %}',
+        type: "POST",
+        'data': {csrfmiddlewaretoken :'{{csrf_token}}',catetipo:"A"},
+        success: function (data) {
+            var valido = data["valido"];
+            var dato = data.valido;
+            console.log(dato);
+            var tr = document.createElement('tr');
+            var td = document.createElement('td');
+            var td1 = document.createElement('td1');
+            td.innerHTML = dato[0].idcategoria;
+            td1.innerHTML = dato[0].nombre;
+            tr.appendChild(td);
+            tr.appendChild(td1);
+            lista.appendChild(tr);
+         }
+      });
+  }
+
+  var table = document.getElementById('con_cat_table'),
+    selected = table.getElementsByClassName('selected');
+table.onclick = highlight;
+function highlight(e) {
+    if (selected[0]) selected[0].className = '';
+    e.target.parentNode.className = 'selected';
+}
+
+
+
 </script>
 
 {% endblock %}
