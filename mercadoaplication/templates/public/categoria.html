@@ -7,10 +7,10 @@
         <div class="col s12 m8">
       <div class="row">
       <div class="col s12 m12">
-           <div class="bordeSeccion" style="height:188px;margin-top:25px;margin-bottom:5px;" id="cat_deseleccionada">
-      <div class="form-group col-md-12 formFila" style="margin-top:20px;margin-left:10px;">
-        <div class="form-row col-md-11" style="margin-top:-15px;">
-          <table id="cat_table" class="table table-responsive table-bordered table-sm table-hover">
+           <div class="" style="height:188px;margin-top:25px;margin-bottom:5px;" id="cat_deseleccionada">
+      <div class="" style="margin-top:20px;margin-left:10px;">
+        <div class="" style="margin-top:-15px;">
+          <table id="cat_tables" class="">
             <thead>
               <tr>
                 <th>Código</th>
@@ -95,7 +95,7 @@
                 <div class="col s12 m12">
                   <center>
                   <button class="btn waves-effect waves-light" type="submit" name="action">Guardar/Actualizar
-                  <i class="material-icons right">send</i>
+                  <i class="material-icons right">cloud</i>
                   </button>
                   </center>
                 </div>
@@ -108,7 +108,7 @@
                 <div class="col s12 m10">
                   <center>
                   <button class="btn waves-effect waves-light #f44336 red " name="action" onclick="local_eliminar(event);">Eliminar
-                  <i class="material-icons right">send</i>
+                  <i class="material-icons right">clear</i>
                   </button>
                   </center>
                 </div>
@@ -124,7 +124,25 @@
     </div><!--cierre del row principal-->
   </div>
 
-
+<!--Contenedor de tabla con ajax-->
+<div class="container">
+  <div class="section">
+    <table id="cat_table" >
+      <caption>Categorias optenidas con ajax</caption>
+      <thead>
+        <tr>
+          <th>Codigo</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Catetipo</th>
+        </tr>
+      </thead>
+      <tbody id="response">
+        
+      </tbody>
+    </table>
+  </div>
+</div>
 
 <!-- contenedor de las listas-->
   <div id="modal1" class="modal bottom-sheet">
@@ -176,9 +194,10 @@
   var btn_Editar = document.getElementById("btn_Editar");
   var btn_Eliminar = document.getElementById("btn_Eliminar");
   var lista = document.getElementById("cat_selecciona");
+  let res = document.getElementById('response');
   //inciamos el select del form
   $(document).ready(function(){
-    
+    retorna_Articulos_Hogar();
   });
 
 	function local_categoria_insertar(e){
@@ -205,6 +224,7 @@
           document.getElementById('catedescripcion').value= "";
           document.getElementById('catetipo').value= "";
           M.toast({html: 'Categoria Actualizada', classes: 'rounded'});
+          retorna_Articulos_Hogar();
         }
       });
       window.pk_edicion = null
@@ -223,6 +243,7 @@
           document.getElementById('catedescripcion').value= "";
           document.getElementById('catetipo').value= "";
           M.toast({html: 'Categoria Agregada', classes: 'rounded'});
+          retorna_Articulos_Hogar();
           //cn_cue_contenedor.load("{%url 'url_categoria'%}");
         }
       });
@@ -249,10 +270,13 @@
           document.getElementById('catedescripcion').value= "";
           document.getElementById('catetipo').value= "";
           M.toast({html: 'Categoria Eliminada', classes: 'rounded'});
-        }
-      });
+          retorna_Articulos_Hogar();
+          }
+        });
+    }else{
+      M.toast({html: 'Debe seleccionar una categoría', classes: 'rounded'});
+    }
   }
-}
 
   function local_buscar(pk) {
 
@@ -289,15 +313,19 @@
         success: function (data) {
             var valido = data["valido"];
             var dato = data.valido;
-            console.log(dato);
-            var tr = document.createElement('tr');
-            var td = document.createElement('td');
-            var td1 = document.createElement('td1');
-            td.innerHTML = dato[0].idcategoria;
-            td1.innerHTML = dato[0].nombre;
-            tr.appendChild(td);
-            tr.appendChild(td1);
-            lista.appendChild(tr);
+            //console.log(data);
+            res.innerHTML = '';
+            for(let item of dato)
+            {
+              //console.log(item.nombre);
+              res.innerHTML += `
+              <tr data-value="${item.catetipo}" onclick="local_buscar(${item.idcategoria});">
+                <td>${item.idcategoria}</td>
+                <td>${item.nombre}</td>
+                <td>${item.catedescripcion}</td>
+                <td>${item.catetipo}</td>
+              </tr>`
+            }
          }
       });
   }

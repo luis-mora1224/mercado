@@ -1,11 +1,26 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-<h1>Mercado Defensores de la Republica</h1>
+<div class="white" id="inicio">
+    <center>
+	<h3>Mercado Defensores de la Republica</h3>
+	 <p>Bienvenido a <em>Mercado Defensores de la Republica</em>, puedes realizar tus compas y solicitar que te las lleven o pedir y solo pasar a recoger tus productos</p>
+	</center>
 
-  <p>Bienvenido a <em>Mercado Defensores de la Republica</em>, puedes realizar tus compas y solicitar que te las lleven o pedir y solo pasar a recoger tus productos</p>
+	<!--colocacion de carrusel de imagenes-->
+	<div class="carousel">
+	    <a class="carousel-item" href="#one!"><img src="{% static 'image/defensores.jpg' %}"></a>
+	    <a class="carousel-item" href="#two!"><img src="{% static 'image/carrousel/imagen1.jpg' %}"></a>
+	    <a class="carousel-item" href="#three!"><img src="{% static 'image/carrousel/imagen2.jpg' %}"></a>
+	    <a class="carousel-item" href="#four!"><img src="{% static 'image/carrousel/imagen3.jpg' %}"></a>
+	    <a class="carousel-item" href="#five!"><img src="{% static 'image/carrousel/imagen4.jpg' %}"></a>
+    </div>
+</div>
 
-<h2>Contenido Dinamico</h2>
+
+  
+
+<!--<h2>Contenido Dinamico</h2>
 
   <p>Lista de productos</p>
   <ul>
@@ -13,6 +28,15 @@
     <li><strong>Cantidad</strong> {{ num_instances }}</li>
     <li><strong>Cantidad disponible</strong> {{ num_instances_available }}</li>
     <li><strong>Local</strong> {{ num_authors }}</li>
-  </ul>
+  </ul>-->
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function()
+  	{
+  		$('.carousel').carousel();
+  	});
+	</script>
 {% endblock %}

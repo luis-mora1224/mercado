@@ -55,7 +55,7 @@ def vw_categorias_Articulos_hogar(request):
 	if request.is_ajax and request.method == "POST":
 		try:
 			valor = request.POST['catetipo']
-			categorias = list(Categorias.objects.filter(catetipo = valor).values())#convertimos a un dicionario y a un arreglo
+			categorias = list(Categorias.objects.filter(catetipo = valor).order_by('idcategoria').values())#convertimos a un dicionario y a un arreglo
 			categoria = json.dumps(categorias)
 			#print(categoria)
 			return JsonResponse({'valido': categorias})
