@@ -24,7 +24,7 @@ import json
 
 def vw_categorias(request):
 	form = CategoriasForm()
-	categorias = Categorias.objects.all();
+	categorias = Categorias.objects.all().order_by('idcategoria')
 	return render(request, 'public/categoria.html', {'form':form, 'categorias':categorias})
 
 
@@ -39,33 +39,17 @@ def vw_categorias_new(request):
 			print(form.errors)
 			return JsonResponse({'estado':0})
 
-def vw_categorias_delete(request):
+def vw_categorias_delete(request,pk):
 
     if request.is_ajax and request.method == "POST":
         try:
-        	pk = request.POST['pk']
-        	categoria = Categorias.objects.filter(cateid=pk)
+        	#pk = request.POST['pk']
+        	categoria = Categorias.objects.filter(idcategoria=pk)
         	categoria.delete()
         	return JsonResponse({'valido': 'SI'})
         except:
         	return JsonResponse({'valido': 'No'})
 
-def vw_categorias_edit(request, pk):
-    
-    if request.is_ajax and request.method == "POST":
-
-
-        categoria = get_object_or_404(Categorias, pk=pk)
-
-        form = CategoriasForm(request.POST, instance=categoria)
-
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'La cateogría se actualizó correctamente.')
-            return JsonResponse({'valido': 'SI'})
-        else:
-            messages.error(request, 'La categoría no pudo ser actualizada.')
-            return JsonResponse({'valido': 'No'})
 
 def vw_categorias_Articulos_hogar(request):
 	if request.is_ajax and request.method == "POST":
@@ -80,3 +64,13 @@ def vw_categorias_Articulos_hogar(request):
 			return JsonResponse({'valido': 'NO'})
 		else:
 			return JsonResponse({'valido': 'NO'})
+
+def vw_categorias_actualizar(request, pk):
+	if request.is_ajax and request.method == "POST":
+		categoriaFiltro = Categorias.objects.get(pk = pk)
+		form = CategoriasForm(request.POST, instance = categoriaFiltro)
+		if form.is_valid():
+			form.save()
+			return JsonResponse({'valido':'SI'})
+		else:
+			return JsonResponse({'valido':'NO'})
