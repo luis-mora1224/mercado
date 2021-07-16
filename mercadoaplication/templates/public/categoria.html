@@ -10,7 +10,7 @@
            <div class="" style="height:188px;margin-top:25px;margin-bottom:5px;" id="cat_deseleccionada">
       <div class="" style="margin-top:20px;margin-left:10px;">
         <div class="" style="margin-top:-15px;">
-          <table id="cat_tables" class="">
+          <table id="cat_table" class="responsive-table display">
             <thead>
               <tr>
                 <th>Código</th>
@@ -19,15 +19,15 @@
                 <th>Tipo</th>            
               </tr>
             </thead>
-            <tbody id="con_cat_selecciona">
-              {% for cat in categorias %}
+            <tbody id="response">
+              <!--{% for cat in categorias %}
                 <tr data-value="{{ cat.catetipo }}" onclick="local_buscar({{ cat.idcategoria }});">
                   <td>{{ cat.idcategoria }}</td>
                   <td>{{ cat.nombre }}</td>
                   <td>{{ cat.catedescripcion }}</td>
                   <td>{{ cat.catetipo }}</td>
                 </tr>
-              {% endfor %}
+              {% endfor %}-->
             </tbody>
           </table>
         </div>
@@ -125,7 +125,7 @@
   </div>
 
 <!--Contenedor de tabla con ajax-->
-<div class="container">
+<!--<div class="container">
   <div class="section">
     <table id="cat_table" >
       <caption>Categorias optenidas con ajax</caption>
@@ -142,7 +142,7 @@
       </tbody>
     </table>
   </div>
-</div>
+</div>-->
 
 <!-- contenedor de las listas-->
   <div id="modal1" class="modal bottom-sheet">
